@@ -2,14 +2,9 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .App-header {
   background-color: #222;
-  height: 150px;
+  min-height: 150px;
   padding: 20px;
   color: white;
   font-size: large;
@@ -19,19 +14,31 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.chat-window {
+  padding: 50px;
+  line-height:50%;
+  height: 100%;
+  background-color:#D3D3D3;
 }
 
-.chat-window {
-  border: 5px solid black;
-  min-width: 1200px;
-  min-height: 800px;
+.messages {
+  height: 100%;
 }
 
 .Message-Box {
+  position: relative;
+  bottom: 0;
+  right: 0;
   border: 1px solid black;
-  min-width: 10px;
-  min-height: 80px; 
+  min-height: 80px;  
+  min-width: 100%;
+  
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  min-height: 80px;
+  min-width: 100%;
 }
