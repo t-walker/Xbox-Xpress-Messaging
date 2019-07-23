@@ -3,6 +3,7 @@ import './App.css';
 
 import Header from "./components/Header";
 import ChatWindow from "./components/ChatWindow";
+import { connect } from 'react-redux';
 
 class App extends Component {
   render() {
@@ -35,4 +36,15 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = state => {
+  console.log(state);
+  return {
+    messages: state.messages
+  }
+}
+
+const connectedApp = connect(
+  mapStateToProps
+)(App);
+
+export default connectedApp;
