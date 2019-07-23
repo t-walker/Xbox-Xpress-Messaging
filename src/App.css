@@ -37,7 +37,7 @@ textarea {
 .Message-Box {
   position: relative;
   bottom: 0;
-  border: 1px; /*solid black;*/
+  border: 1px;
   min-height: 80px;
 }
 
@@ -45,4 +45,10 @@ textarea {
   position: absolute;
   bottom: 0;
   min-height: 80px;
+}
+
+.btn-color {
+  background-color: #107c10;
+  color: white;
+  border-color: white;
 }
