@@ -37,7 +37,7 @@ textarea {
 .Message-Box {
   position: relative;
   bottom: 0;
-  border: 1px; /*solid black;*/
+  border: 1px;
   min-height: 80px;
 }
 
