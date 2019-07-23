@@ -8,8 +8,8 @@ const Header = () => {
           <div className="row">
             <div className="col-md-2">
             </div>
-            <div className="col-md-8">
-              <img className="img img-fluid" src={logo} alt="Logo"/>
+            <div className="col-md-8 text-center">
+              <img className="img img-fluid" src={logo} alt="Logo" />
             </div>
             <div className="col-md-2">
             </div>
