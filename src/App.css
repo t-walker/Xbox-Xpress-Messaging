@@ -8,12 +8,16 @@
   padding: 20px;
   color: white;
   font-size: large;
+  margin-top: 50px;
+}
+
+body {
+  background-color: #000000;
 }
 
 textarea {
   resize: none;
 }
-
 
 .App-intro {
   font-size: large;
