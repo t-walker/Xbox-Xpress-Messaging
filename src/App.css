@@ -10,14 +10,19 @@
   font-size: large;
 }
 
+textarea {
+  resize: none;
+}
+
+
 .App-intro {
   font-size: large;
 }
 
 .chat-window {
-  padding: 50px;
-  line-height:50%;
-  height: 100%;
+  max-height: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
   background-color:#D3D3D3;
 }
 
@@ -28,17 +33,12 @@
 .Message-Box {
   position: relative;
   bottom: 0;
-  right: 0;
-  border: 1px solid black;
-  min-height: 80px;  
-  min-width: 100%;
-  
+  border: 1px; /*solid black;*/
+  min-height: 80px;
 }
 
 .footer {
   position: absolute;
   bottom: 0;
-  right: 0;
   min-height: 80px;
-  min-width: 100%;
 }
