@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 import Message from "./Message";
 
 const ChatWindow = () => {
+
+    const messagesEndRef = useRef(null)
+
+    const scrollToBottom = () => {
+      messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+
+    useEffect(scrollToBottom);
+
     return (
         <div className="row">
           <div className='col-md-12'>
@@ -27,6 +36,7 @@ const ChatWindow = () => {
                   <Message message="Thats good" author="Tyler" />
                   <Message message="Yup" author="Swarna" user />
               </div>
+              <div ref={messagesEndRef} />
             </div>
           </div>
         </div>
