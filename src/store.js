@@ -1,7 +1,11 @@
 import {createStore} from 'redux'; 
 
 const defaultState = {
-    messages: []
+    messages: [
+        {message: 'hi micah', author: 'Tyler', user: true},
+        {message: 'Suck my recently dropped nuts', author: 'Micah', user: false}
+
+    ]
 }
 
 const store = createStore(reducer, defaultState);
