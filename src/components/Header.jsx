@@ -1,6 +1,6 @@
 import React from "react";
 
-import logo from '../images/Xpress Messaging.png';
+import logo from '../images/xpress messaging TRANSPARENT.png';
 
 const Header = () => {
     return (

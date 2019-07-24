@@ -3,7 +3,14 @@ import {createStore} from 'redux';
 const defaultState = {
     messages: [
         {message: 'hi micah', author: 'Tyler', user: true},
-        {message: 'Suck my recently dropped nuts', author: 'Micah', user: false}
+        {message: 'Suck my recently dropped nuts', author: 'Micah', user: false},
+        {message: 'containers!', author: 'Bart', user: false },
+        {message: 'containers!', author: 'Bart', user: false },
+        {message: 'containers!', author: 'Bart', user: false },
+        {message: 'containers!', author: 'Bart', user: false },
+        {message: 'containers!', author: 'Bart', user: false },
+        {message: 'containers!', author: 'Bart', user: false },
+        {message: 'kubernetes!', author: 'Bart', user: false }
 
     ]
 }
@@ -20,6 +27,7 @@ function reducer(state=defaultState, action) {
 }
 
 function addMessage(state, message) {
+    console.log('in the store'+ message);
     return {
         ...state,
         messages: [...state.messages, message]
