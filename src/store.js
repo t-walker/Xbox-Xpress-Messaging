@@ -34,5 +34,4 @@ function addMessage(state, message) {
     }
 }
 
-// export default my_createStore;
 export default store;
