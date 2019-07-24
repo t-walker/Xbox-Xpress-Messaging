@@ -23,11 +23,20 @@ const Message = ({message, author, user}) => {
 
     if (user) {
         messageString = (
-                <p style={{textAlign: "right"}}>{message} <span style={{color: 'blue'}}>{author}</span></p>
+                <div>
+                    <p style={{padding: '0px', margin: '0px', textAlign: "right", color: 'blue'}}>{author}</p>
+                    <p style={{textAlign: "right"}}>{message}</p>
+                </div>
                 );
     }
     else {
-        messageString = (<p style={{textAlign: "left"}}><span style={{color: 'red'}}>{author}</span> {message}</p>);
+        messageString = (
+                <div>
+                    <p style={{padding: '0px', margin: '0px', textAlign: "left", color: 'red'}}>{author}</p>
+                    <p style={{textAlign: "left"}}>{message}</p>
+                </div>
+                // <p style={{textAlign: "left"}}><span style={{color: 'red'}}>{author}</span> {message}</p>
+                );
     }
 
     return messageString;
